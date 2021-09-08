@@ -1,6 +1,6 @@
 import 'package:data_connection_checker/data_connection_checker.dart';
 
-main() async {
+Future<void> main() async {
   // Simple check to see if we have internet
   print("The statement 'this machine is connected to the Internet' is: ");
   print(await DataConnectionChecker().hasConnection);
